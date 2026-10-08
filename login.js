@@ -1,0 +1,3 @@
+(async()=>{try{const {user}=await api('/api/me');location.href=user.role==='admin'?'/admin.html':'/dashboard.html';}catch{}})();
+const form=document.querySelector('#loginForm'),msg=document.querySelector('#msg');
+form.addEventListener('submit',async e=>{e.preventDefault();msg.className='hidden';const b=form.querySelector('button');b.disabled=true;try{const fd=new FormData(form);const {user}=await api('/api/auth/login',{method:'POST',body:JSON.stringify(Object.fromEntries(fd))});location.href=user.role==='admin'?'/admin.html':'/dashboard.html';}catch(err){msg.textContent=err.message;msg.className='error';}finally{b.disabled=false;}});

@@ -1,0 +1,6 @@
+{
+  "jwtSecret": "c2f10928c9237a52ceb320790ac30c01fa49f159b4504a876a3d4042c46513b24f16b2d8df0dd282ab904b234588022e",
+  "vapidPublicKey": "BC1ck7vtYO_3ja8UpwYueaA61JY11KrWKAHwBc-mtYPl8PYLXN-VRV3-o-51HklT917PVm_-1LzK6kNsjl2kSMw",
+  "vapidPrivateKey": "IneMTjc3kvchLG053UefNz2Arv89RnCDfXkEdk1t3ZQ",
+  "createdAt": "2026-10-07T16:23:30.389Z"
+}

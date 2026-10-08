@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "usr_1791390314660_b4d58362f5",
+      "name": "Joshua Brown",
+      "email": "joshuaisgoat127@gmail.com",
+      "passwordHash": "$2a$12$4OBUBUxitswwgLplTZ/ny.yJ/Dzwt.nfxU7SiNFRTWOEkprXlsMda",
+      "role": "admin",
+      "status": "approved",
+      "createdAt": "2026-10-07T16:25:14.897Z",
+      "approvedAt": "2026-10-07T16:25:14.897Z"
+    }
+  ],
+  "trades": [],
+  "subscriptions": []
+}

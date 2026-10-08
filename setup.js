@@ -1,0 +1,3 @@
+const form=document.querySelector('#setupForm'),msg=document.querySelector('#msg');
+(async()=>{try{const s=await api('/api/setup/status');if(!s.needsAdmin){form.classList.add('hidden');msg.textContent='Setup is already complete. Use the normal login page.';msg.className='success';}}catch{}})();
+form.addEventListener('submit',async e=>{e.preventDefault();const b=form.querySelector('button');b.disabled=true;try{const fd=new FormData(form);await api('/api/setup/admin',{method:'POST',body:JSON.stringify(Object.fromEntries(fd))});location.href='/admin.html';}catch(err){msg.textContent=err.message;msg.className='error';b.disabled=false;}});
